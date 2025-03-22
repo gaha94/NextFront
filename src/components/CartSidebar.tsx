@@ -35,7 +35,10 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
     >
       <div className="flex items-center justify-between p-4 border-b">
         <h2 className="text-lg font-semibold text-black">Carrito</h2>
-        <button onClick={onClose} title="Cerrar carrito">
+        <button 
+            onClick={onClose}  
+            title="Cerrar carrito"
+            className='cursor-pointer hover:text-black'>
           <X />
         </button>
       </div>
